@@ -5,7 +5,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>recell技术介绍</title>
 </head>
+<style type="text/css">
+	.div{margin: 0 auto; width: 1200px;}
+</style>
 <body>
-	<h1>hello world</h1>
+	<script type="text/javascript">
+   		(function (doc, win) {
+      		var docEl = doc.documentElement,
+        	resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        	recalc = function () {
+          	var clientWidth = docEl.clientWidth;
+          	if (!clientWidth) return;
+          	docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+        };
+
+      	if (!doc.addEventListener) return;
+      		win.addEventListener(resizeEvt, recalc, false);
+      		doc.addEventListener('DOMContentLoaded', recalc, false);
+    	})(document, window);
+	</script>
+	<div class="div">
+		<img src="1.jpg" >
+		<img src="2.jpg" >
+		<img src="3.jpg" >
+		<img src="4.jpg" >
+		<img src="5.jpg" >
+		<img src="6.jpg" >
+		<img src="7.jpg" >
+		<img src="8.jpg" >
+		<img src="9.jpg" >
+		<img src="10.jpg" >
+		<img src="11.jpg" >
+		<img src="12.jpg" >
+		<img src="13.jpg" >
+		<img src="14.jpg" >
+		<img src="15.jpg" >
+		<img src="16.jpg" >
+	</div>
 </body>
 </html>
